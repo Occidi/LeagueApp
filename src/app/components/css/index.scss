@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Beaufortlol';
-  src: url('../../fonts/beaufortforlol-regular.otf');
+  src: url('./../../fonts/beaufortforlol-regular.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ body{
 }
 
 h1 {
-    font-family: 'Beaufortlol', cursive;
+    font-family: 'Beaufortlol', monospace,sans-serif;
     color:$lol;
     text-align: center;
     font-size: 100px;
