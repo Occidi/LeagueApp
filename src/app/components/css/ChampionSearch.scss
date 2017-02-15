@@ -1,0 +1,20 @@
+@import 'colors';
+
+
+#search-champion{
+  display: flex;
+  input[type="text"]{
+      flex-basis: 0;
+      padding: 10px;
+      border: 2px solid $loldark;
+      border-radius: 4px 0 0 4px;
+      background-color:black;
+      color:$lollight;
+      &:focus{
+        background-color: $input_focus;
+        outline: none;
+        border: 2px solid $lol;
+      }
+  }
+}
+

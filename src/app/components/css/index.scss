@@ -1,0 +1,68 @@
+@import 'reset';
+@import 'colors';
+
+@font-face {
+  font-family: 'Beaufortlol';
+  src: url('../../fonts/beaufortforlol-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Beaufortlol Italic';
+  src: url('../../fonts/beaufortforlol-italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// index
+body{
+  font-family: monospace;
+  background-image: url('./background.jpg');
+  background-size: cover;
+}
+
+h1 {
+    font-family: 'Beaufortlol', cursive;
+    color:$lol;
+    text-align: center;
+    font-size: 100px;
+    margin: 10px;
+    text-shadow: 2px 2px 4px $loldark; 
+}
+
+#app-wrapper{
+  width: 60%;
+  margin: 0 auto;
+  background: #fff;
+  border-top: 3px solid $lolaccent;
+  padding: 10px;
+  border-radius: 2px;
+  color: #000;
+}
+
+#app-wrapper a{
+  text-decoration: none;
+  color:black;
+}
+
+
+#app-list ul{
+  list-style-type: none;
+  padding: 4px;
+  background-color: rgba(0,0,0,0.1);
+  border-left: 1px solid rgba(84,84,84,0.3);
+  border-top: 1px solid rgba(84,84,84,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  border-right: 1px solid rgba(255,255,255,0.6);
+  box-sizing: border-box;
+  font-size: 1.4em;
+}
+
+.success {
+  color: $lolaccent;
+  position: absolute;
+  left:50%;
+  top:165px;
+  font-size:1.2em;
+}

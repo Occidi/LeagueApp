@@ -1,0 +1,22 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+     "plugins": [
+        "react"
+    ],
+    "extends": [
+        "plugin:react/recommended",
+        "google"
+    ],
+    "rules": {
+       "no-set-state": "off"
+    }
+}
+
+    
