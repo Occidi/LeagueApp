@@ -31,7 +31,6 @@ const ChampionSearch = React.createClass({
         this.setState({
             nameValue: '',
         });
-        this.props.trouverChampion('');
     },
     render() {
         return(
