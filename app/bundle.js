@@ -22758,7 +22758,6 @@
 	        this.setState({
 	            nameValue: ''
 	        });
-	        this.props.trouverChampion('');
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(
