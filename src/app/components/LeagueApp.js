@@ -72,7 +72,7 @@ let LeagueApp = React.createClass({
                 </ReactCSSTransitionGroup>
                 <ul>
                     <div className="champion-item">
-                        <img className="item-image" src="http://ddragon.leagueoflegends.com/cdn/7.2.1/img/item/2050.png"></img>
+                        <img className="item-image" src="https://ddragon.leagueoflegends.com/cdn/7.2.1/img/item/2050.png"></img>
                         <span className="item-name">Name</span>
                         <span className="item-title">Title</span>
                         <span className="item-ressource">Ressource</span>
