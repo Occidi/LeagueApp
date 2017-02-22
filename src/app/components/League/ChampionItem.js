@@ -8,6 +8,7 @@ let ChampionItem = React.createClass({
     },
     render() {
         return(
+            <div className="yop">
             <a target="!blank" href={'http://www.probuilds.net/champions/details/' + this.props.item.id}>
             <li>
                 <div className="champion-item">
@@ -19,6 +20,7 @@ let ChampionItem = React.createClass({
                 </div>
             </li>
             </a>
+            </div>
         );
     }, // render
 });

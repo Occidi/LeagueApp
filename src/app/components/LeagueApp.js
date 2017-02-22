@@ -5,6 +5,8 @@ import {loadChampions} from '../libs/appService';
 import ChampionItem from './League/ChampionItem';
 import ChampionSearch from './League/ChampionSearch';
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 // Creating LeagueApp component
 let LeagueApp = React.createClass({
@@ -43,7 +45,7 @@ let LeagueApp = React.createClass({
     },
     showTimedMessage(msg) {
         this.setState({message: msg});
-        setTimeout(() => this.setState({message: ''}), 500);
+        setTimeout(() => this.setState({message: ''}), 2000);
     },
 
     render() {
@@ -64,17 +66,21 @@ let LeagueApp = React.createClass({
             <div id="app-list">
                 <ChampionSearch
                 trouverChampion={this.trouverChampion}/>
-                {this.state.message &&
-                <div className='success'>{this.state.message}</div>}
+                <ReactCSSTransitionGroup transitionName="success" component="div" className="success" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
+                                    {this.state.message && <div className='yep'>{this.state.message}</div>}
+
+                </ReactCSSTransitionGroup>
                 <ul>
                     <div className="champion-item">
-                    <img className="item-image" src="http://ddragon.leagueoflegends.com/cdn/7.2.1/img/item/2050.png"></img>
-                    <span className="item-name">Name</span>
-                    <span className="item-title">Title</span>
-                    <span className="item-ressource">Ressource</span>
-                    <span className="item-tags">Tags</span>
-                </div>
-                    {championsItems}
+                        <img className="item-image" src="http://ddragon.leagueoflegends.com/cdn/7.2.1/img/item/2050.png"></img>
+                        <span className="item-name">Name</span>
+                        <span className="item-title">Title</span>
+                        <span className="item-ressource">Ressource</span>
+                        <span className="item-tags">Tags</span>
+                    </div>
+                     <ReactCSSTransitionGroup transitionName="liste" component="div" className="liste" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
+                        {championsItems}
+                    </ReactCSSTransitionGroup>
                 </ul>
             </div>
         );

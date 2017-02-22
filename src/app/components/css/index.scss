@@ -64,5 +64,64 @@ h1 {
   position: absolute;
   left:50%;
   top:165px;
-  font-size:1.2em;
+  font-size:1.4em;
+}
+
+.yep
+{
+  min-height: 50px;
+  min-width: 300px;
+}
+
+.success-enter {
+  opacity: 0.01;
+  color: darkred;
+  width: 0px;
+}
+
+.success-enter.success-enter-active {
+  opacity: 1;
+  color : $lolaccent;
+  width: 100px;
+  transition: 500ms cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.success-leave {
+  opacity: 1;
+  color: $lolaccent;
+  width: 100px;
+}
+
+.success-leave.success-leave-active {
+  opacity: 0.01;
+  transition: 500ms cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+
+
+.yop
+{
+  opacity :1;
+  visibility: visible;
+}
+.liste-enter {
+  opacity: 0.01;
+  visibility: hidden;
+}
+
+.liste-enter.liste-enter-active {
+  opacity: 1;
+  visibility: visible;
+  transition: 500ms cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.liste-leave {
+  opacity: 1;
+  visibility: visible
+}
+
+.liste-leave.liste-leave-active {
+  opacity: 0.01;
+  visibility: hidden;
+  transition: 500ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
